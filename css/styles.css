@@ -12,10 +12,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 /* Header */
 .page-header {
   border-bottom: 1px solid #ececec;
@@ -241,21 +237,30 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-list .text {
-  color: #757575;
-  font-size: 16px;
-  line-height: 1.19;
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
+
+  margin-bottom: 50px;
 }
-.team-list {
+.team__list {
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
-.team-list img {
+.team__item {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+}
+.team__img {
   display: block;
 }
-.section4-h3 {
+.team__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -264,13 +269,14 @@ ul {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-.section4-li {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  padding-bottom: 30px;
+.team__text {
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
-.ul-social-team {
+/* Index - Section 4 (Our team) - Social */
+.social {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -278,10 +284,7 @@ ul {
   margin-top: 16px;
   padding: 0 32px;
 }
-.ul-social-team > li:not(:first-child) {
-  margin-left: 10px;
-}
-.ul-social-team > li {
+.social__item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -290,10 +293,13 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ul-social-team > li:hover {
+.social__item:not(:first-child) {
+  margin-left: 10px;
+}
+.social__item:hover {
   background-color: #2196f3;
 }
-.icon-team {
+.social__icon {
   fill: #afb1b8;
   padding: 12px;
 
@@ -301,20 +307,29 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-team:hover,
-.icon-team:focus {
+.social__icon:hover,
+.social__icon:focus {
   fill: #ffffff;
 }
 /* Index - Section 5 (Loyal Customers) */
-.ul-customers {
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+.customers__list {
   display: flex;
   justify-content: center;
   list-style: none;
 }
-.ul-customers > li:not(:first-child) {
-  margin-left: 30px;
-}
-.ul-customers > li {
+.customers__item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -324,10 +339,13 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ul-customers > li:hover {
+.customers__item:not(:first-child) {
+  margin-left: 30px;
+}
+.customers__item:hover {
   border-color: #2196f3;
 }
-.icon-customers {
+.customers__icon {
   fill: #afb1b8;
   padding: 16px 32px;
 
@@ -335,8 +353,8 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-customers:hover,
-.icon-customers:focus {
+.customers__icon:hover,
+.customers__icon:focus {
   fill: #2196f3;
 }
 /* Footer */
