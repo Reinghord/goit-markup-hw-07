@@ -453,32 +453,36 @@
       </section>
     </main>
     <!--Footer-->
-    <footer class="footer">
-      <div class="container flex-footer">
+    <footer class="page-footer">
+      <div class="container page-footer--display">
         <section>
-          <a href="./index.html" class="logo-footer"
-            ><span class="web">Web</span>Studio</a
+          <a href="./index.html" class="page-footer__logo"
+            ><span class="page-footer__logo--secondary">Web</span>Studio</a
           >
+          <!-- Footer - Address -->
           <address class="address">
-            <p>г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="ul-footer">
-              <li>
-                <a href="mailto:info@devstudio.com" class="link"
+            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="address__list">
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li>
-                <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a href="tel:380961111111" class="address__link"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </section>
-        <section class="footer-join">
-          <h3>Присоединяйтесь</h3>
-          <ul class="ul-join">
-            <li>
+        <!-- Footer - Join -->
+        <section class="join">
+          <h3 class="join__title">Присоединяйтесь</h3>
+          <ul class="join__list">
+            <li class="join__item">
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <svg class="icon-join" width="44" height="44">
+                <svg class="join__icon" width="44" height="44">
                   <use
                     href="./images/icons.svg#icon-instagram-2"
                     width="20"
@@ -486,9 +490,9 @@
                   ></use></svg
               ></a>
             </li>
-            <li>
+            <li class="join__item">
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <svg class="icon-join" width="44" height="44">
+                <svg class="join__icon" width="44" height="44">
                   <use
                     href="./images/icons.svg#icon-twitter-1"
                     width="20"
@@ -496,9 +500,9 @@
                   ></use></svg
               ></a>
             </li>
-            <li>
+            <li class="join__item">
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <svg class="icon-join" width="44" height="44">
+                <svg class="join__icon" width="44" height="44">
                   <use
                     href="./images/icons.svg#icon-facebook-1"
                     width="20"
@@ -506,9 +510,9 @@
                   ></use></svg
               ></a>
             </li>
-            <li>
+            <li class="join__item">
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <svg class="icon-join" width="44" height="44">
+                <svg class="join__icon" width="44" height="44">
                   <use
                     href="./images/icons.svg#icon-linkedin-1"
                     width="20"
@@ -518,19 +522,24 @@
             </li>
           </ul>
         </section>
-        <section class="footer-subscription">
-          <form class="footer-subscription-form">
-            <label class="footer-label">Подпишитесь на рассылку</label>
-            <div class="footer-email-wrapper">
+        <!-- Footer - Subscription -->
+        <section class="subscription">
+          <form class="subscription__form">
+            <label class="subscription__title">Подпишитесь на рассылку</label>
+            <div class="subscription__wrapper">
               <input
-                class="footer-input-email"
+                class="subscription__input"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
               />
-              <button class="footer-button-email" type="submit">
-                Подписаться<svg class="icon-send" width="24" height="24">
+              <button class="subscription__btn" type="submit">
+                Подписаться<svg
+                  class="subscription__icon"
+                  width="24"
+                  height="24"
+                >
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
