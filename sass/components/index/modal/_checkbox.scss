@@ -23,7 +23,7 @@
   font-size: 14px;
   line-height: 1.71;
 
-  color: #757575;
+  color: $colorSeconday;
 }
 
 .checkbox__icon {
@@ -34,8 +34,8 @@
   margin-right: 7px;
 }
 
-.checkbox-terms {
-  color: #2196f3;
+.checkbox__terms {
+  color: $colorHover;
 
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
@@ -45,6 +45,6 @@
   transition: background-size 0.3s;
 
   &:visited {
-    color: #2196f3;
+    color: $colorHover;
   }
 }

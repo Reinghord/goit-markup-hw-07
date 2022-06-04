@@ -1,6 +1,14 @@
 /* Header - Contacts */
 .contacts {
+  display: flex;
   margin-left: auto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  list-style: none;
 }
 
 .contacts__list-item:not(:first-child) {
@@ -11,7 +19,7 @@
   display: flex;
   align-items: center;
 
-  color: #757575;
+  color: $colorSeconday;
   text-decoration: none;
 
   transition-property: color;

@@ -3,8 +3,7 @@
   margin-left: 93px;
 }
 
-.navigation__list-links,
-.contacts {
+.navigation__list-links {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -20,7 +19,9 @@
   &:not(:last-child) {
     margin-right: 50px;
   }
-
+  &--current {
+    color: $colorHover;
+  }
   &--current::after {
     content: '';
     display: inline-block;
@@ -46,6 +47,6 @@
 
   &:hover,
   &:focus {
-    color: #2196f3;
+    color: $colorHover;
   }
 }

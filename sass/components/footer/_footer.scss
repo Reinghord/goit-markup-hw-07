@@ -1,6 +1,6 @@
 /* Footer */
 .page-footer {
-  color: #ffffff;
+  color: $colorHero;
   background-color: $bgColorFooter;
 
   padding: 60px 0px;
@@ -23,10 +23,10 @@
   display: block;
 
   &:visited {
-    color: #ffffff;
+    color: inherit;
   }
 }
 
 .page-footer__logo--secondary {
-  color: #2196f3;
+  color: $LogoColorSec;
 }

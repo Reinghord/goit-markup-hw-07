@@ -1,18 +1,10 @@
 /* Index - Section 2 (Features) */
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section;
 }
 
 .features__title {
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
+  @include visually-hidden;
 }
 
 .features__list {
@@ -32,7 +24,7 @@
 .features__icon {
   display: block;
   padding: 25px 100px;
-  background-color: #f5f4fa;
+  background-color: $bgColorSecondary;
   margin-bottom: 30px;
   border-radius: 4px;
 }

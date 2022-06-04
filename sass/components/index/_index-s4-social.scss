@@ -27,7 +27,7 @@
 }
 
 .social__icon {
-  fill: #afb1b8;
+  fill: $colorIcon;
   padding: 12px;
 
   transition-property: fill;
@@ -36,6 +36,6 @@
 
   &:hover,
   &:focus {
-    fill: #ffffff;
+    fill: $colorHero;
   }
 }

@@ -1,7 +1,6 @@
 /* Index - Section 5 (Loyal Customers) */
 .customers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include section;
 }
 
 .customers__title {
@@ -39,7 +38,7 @@
 }
 
 .customers__icon {
-  fill: #afb1b8;
+  fill: $colorIcon;
   padding: 16px 32px;
 
   transition-property: fill;
