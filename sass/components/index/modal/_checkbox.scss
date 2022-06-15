@@ -10,6 +10,9 @@
   -moz-appearance: none;
   appearance: none;
 
+  &:focus + .checkbox__label .checkbox__icon {
+    border: 2px solid #2196f3;
+  }
   &:checked + .checkbox__label .checkbox__icon {
     border: none;
     fill: $colorHover;
@@ -22,6 +25,7 @@
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
+  cursor: pointer;
 
   color: $colorSeconday;
 }
